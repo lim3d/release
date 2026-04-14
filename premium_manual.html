@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타짜의 눈 - 공식 사용자 매뉴얼</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #0f172a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+            background: #1e293b;
+            margin: 40px 20px;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero {
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            background: linear-gradient(90deg, #60a5fa, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+
+        .infographic {
+            width: 100%;
+            border-radius: 16px;
+            margin-top: 20px;
+            border: 2px solid #334155;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            color: #fbbf24;
+            margin-bottom: 20px;
+            border-left: 5px solid #fbbf24;
+            padding-left: 15px;
+        }
+
+        .step-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .step-item {
+            background: rgba(255, 255, 255, 0.03);
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-start;
+            transition: transform 0.2s;
+        }
+
+        .step-item:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .step-num {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: #3b82f6;
+            color: white;
+            min-width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .key-badge {
+            display: inline-block;
+            background: #475569;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-family: monospace;
+            box-shadow: 0 4px 0 #1e293b;
+            margin: 0 4px;
+        }
+
+        .alert {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 5px solid #ef4444;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #64748b;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 20px;
+        }
+
+        @media print {
+            body { background: white; color: black; }
+            .container { box-shadow: none; border: none; margin: 0; padding: 0; }
+            .hero h1 { -webkit-text-fill-color: black; }
+            .step-item { background: #f8fafc; border: 1px solid #e2e8f0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🃏 타짜의 눈</h1>
+            <p>공식 사용자 매뉴얼 v1.0 - AI 카드 기억 도우미</p>
+            <img src="card_matcher_infographic_1776139241024.png" alt="Card Matcher Infographic" class="infographic">
+        </div>
+
+        <div class="section">
+            <div class="section-title">🚀 5분 완성 시크릿 가이드</div>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <div><strong>게임 창 켜기</strong><br>게임을 먼저 실행하고 화면에 띄워두세요. 창을 숨기면 헬퍼도 못 봅니다!</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <div><strong>헬퍼 실행</strong><br><code>Card_Matcher_Helper.EXE</code> 파일을 더블 클릭하세요.</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <div><strong>창 선택하기</strong><br>검은 창에 나오는 목록 중 게임 창의 번호를 입력하고 <span class="key-badge">Enter</span>를 누르세요.</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <div><strong>영역 드래그</strong><br>마우스로 카드판 영역을 예쁘게 드래그하고 다시 <span class="key-badge">Enter</span>!</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">5</div>
+                    <div><strong>Helper TV 시청</strong><br>옆에 뜬 TV 화면을 보면서 신나게 게임을 즐기세요.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⌨️ 필수 단축키 (필독)</div>
+            <p>※ 반드시 <strong>'Helper TV' 화면을 클릭한 상태</strong>에서 키보드를 누르세요!</p>
+            <div class="step-list">
+                <div class="step-item"><div><span class="key-badge">C</span> <strong>- 새 게임 (Clean)</strong>: 완전히 새로운 게임을 할 때 기억을 초기화합니다.</div></div>
+                <div class="step-item"><div><span class="key-badge">R</span> <strong>- 구역 재설정 (Reset)</strong>: 창 위치가 바뀌었을 때 영역을 다시 잡습니다.</div></div>
+                <div class="step-item"><div><span class="key-badge">Q</span> <strong>- 종료 (Quit)</strong>: 프로그램을 끕니다.</div></div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>⚠️ 주의!</strong> 너무 빨리 뒤집으면 헬퍼가 눈치채지 못할 수 있습니다. 0.4초 정도의 리듬을 지켜주세요!
+        </div>
+
+        <div class="footer">
+            본 매뉴얼은 '타짜의 눈' 공식 배포 버전 전용입니다. 무단 전재 및 재배포 시 칭찬받습니다. 😎
+        </div>
+    </div>
+</body>
+</html>
